@@ -8,6 +8,9 @@ import { Link } from "react-router-dom";
 import styles from "./CarouselItem.module.css";
 
 const CarouselItem = ({ movie }) => {
+  console.log(movie, "movie");
+  console.log(`https://image.tmdb.org/t/p/original/${movie.backdrop_path}`);
+
   return (
     <div className={styles.moviePosterCard}>
       <figure className="h-100 m-0">
