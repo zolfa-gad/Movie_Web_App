@@ -1,0 +1,21 @@
+.movieDetail {
+  top: 80px;
+  background-color: rgb(0, 0, 0, 0.7);
+}
+
+.movieDetail .detail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+}
+
+@media (max-width: 576px) {
+  .movieDetail .detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}

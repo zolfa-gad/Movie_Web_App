@@ -1,0 +1,29 @@
+.searchWindow {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2000;
+  background-color: rgb(0, 0, 0, 0.7);
+  overflow-y: scroll;
+}
+
+.container form {
+  width: 75%;
+}
+
+.buttonUp {
+  position: fixed;
+  top: 95%;
+  left: 95%;
+  transform: translate(-95%, -95%);
+  z-index: 3000;
+}
+
+@media (max-width: 576px) {
+  .container form {
+    width: 100%;
+  }
+}

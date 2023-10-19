@@ -1,0 +1,45 @@
+.moviePoster {
+  position: absolute;
+  background-color: transparent;
+  width: 90%;
+  top: 60px;
+  left: 50%;
+  margin-left: -45%;
+  z-index: 100;
+}
+
+.moviePoster .container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.movieImg {
+  height: 90%;
+}
+
+.movieOverview {
+  display: flex;
+}
+
+.moviePosterCard {
+  height: 670px;
+}
+
+@media (max-width: 576px) {
+  .movieImg {
+    height: 60%;
+  }
+  .movieOverview {
+    display: none;
+  }
+  .moviePosterCard {
+    height: 600px;
+  }
+  .moviePoster .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

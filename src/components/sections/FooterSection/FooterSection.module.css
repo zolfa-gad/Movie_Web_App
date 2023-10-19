@@ -1,0 +1,24 @@
+.footerSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.formSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media (max-width: 576px) {
+  .footerSection {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .formSection {
+    display: flex;
+    flex-direction: column;
+  }
+}
