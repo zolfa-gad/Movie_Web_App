@@ -30,9 +30,13 @@ const AppRouter = () => {
           <NavBarSection />
           <Routes>
             <Route path="/" element={<HomePageRoute />} />
+            <Route path="home" element={<HomePageRoute />} />
             <Route path="detail/:type/:id" element={<MovieDetailPageRoute />} />
             <Route path="movie-detail/:id" element={<MovieDetailPageRoute />} />
-            <Route path="view-more/:section/:list" element={<ViewMorePageRoute />} />
+            <Route
+              path="view-more/:section/:list"
+              element={<ViewMorePageRoute />}
+            />
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
           <FooterSection />
